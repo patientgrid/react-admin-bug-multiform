@@ -1,4 +1,4 @@
-import { Edit, RadioButtonGroupInput, SimpleForm, TextInput } from 'react-admin';
+import { Edit, RadioButtonGroupInput, SimpleForm } from 'react-admin';
 import { Typography } from "@mui/material";
 
 const PostEdit = () => {
@@ -7,10 +7,9 @@ const PostEdit = () => {
 
     return (
         <div>
-            <Typography variant="h6" gutterBottom>Edit first record</Typography>
             <Edit>
                 <SimpleForm record={record1}>
-                    <TextInput source="id" name='text1'/>
+                    <Typography variant="h6" gutterBottom>Edit first record</Typography>
                     <RadioButtonGroupInput
                         name="radio1"
                         source="selected"
@@ -22,10 +21,9 @@ const PostEdit = () => {
                     />
                 </SimpleForm>
             </Edit>
-            <Typography variant="h6" gutterBottom>Edit second record</Typography>
             <Edit>
                 <SimpleForm record={record2}>
-                    <TextInput source="id" name='text2'/>
+                    <Typography variant="h6" gutterBottom>Edit second record</Typography>
                     <RadioButtonGroupInput
                         name="radio2"
                         source="selected"
