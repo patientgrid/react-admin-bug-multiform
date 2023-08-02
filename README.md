@@ -1,9 +1,19 @@
-# React + Vite
+# Demo project for suspected bug in React Admin RadioButtonGroupInput
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Install and run:
 
-Currently, two official plugins are available:
+```
+yarn && yarn dev
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# react-admin-bug-multiform
+Navigate to http://localhost:5173/#/posts/1 and:
+
+1. The radio buttons for the first and second record work perfectly.
+2. Clicking on the labels works only for the first record, when clicking
+   the labels of the second record, the *first records* radio button will 
+   change instead of the first one.
+
+
+### Example video:
+
+https://youtu.be/gyXKiRNNgew
